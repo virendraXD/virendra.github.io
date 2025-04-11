@@ -10,7 +10,7 @@ body {
   
   /* HEADER */
   header {
-    background: #FF3C3C;
+    background: #F08A5D;
     color: white;
     padding: 2rem 1rem;
   }
@@ -72,4 +72,24 @@ body {
     margin-top: 2rem;
     font-size: 0.9rem;
   }
+
+  .section-title {
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 600;
+    margin-top: 2rem;
+    color: #222;
+  }
+
+  .section-title {
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 600;
+    margin-top: 2rem;
+    color: #F08A5D;
+    border-bottom: 3px solid #F08A5D;
+    display: inline-block;
+    padding-bottom: 0.5rem;
+  }
+  
   
