@@ -1,24 +1,31 @@
+/* FONT */
 body {
     font-family: 'Poppins', sans-serif;
-    text-align: center;
-    background: #f4f4f4;
-    color: #333;
     margin: 0;
     padding: 0;
-    background: linear-gradient(to right, #f2f2f2, #e0eafc);
-  }
-
-  html {
-    scroll-behavior: smooth;
+    background-color: #ffffff;
+    color: #222;
+    text-align: center;
   }
   
+  /* HEADER */
   header {
-    background: #0d6efd;
+    background: #FF3C3C;
     color: white;
-    padding: 2rem;
-    background: linear-gradient(to right, #667eea, #764ba2);
+    padding: 2rem 1rem;
   }
   
+  header h1 {
+    margin: 0;
+    font-size: 2.5rem;
+  }
+  
+  header p {
+    margin-top: 0.5rem;
+    font-size: 1.2rem;
+  }
+  
+  /* GALLERY */
   .gallery {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -26,23 +33,26 @@ body {
     padding: 2rem;
     max-width: 1000px;
     margin: auto;
+    background-color: #f7f7f7;
   }
   
   .gallery img {
     width: 100%;
     border-radius: 15px;
-    transition: transform 0.3s;
+    transition: transform 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   }
   
   .gallery img:hover {
     transform: scale(1.05);
   }
-
+  
+  /* BUTTON */
   .btn {
     display: inline-block;
     margin-top: 1rem;
     padding: 10px 20px;
-    background-color: #ff5e57;
+    background-color: #222;
     color: white;
     border-radius: 25px;
     text-decoration: none;
@@ -51,6 +61,15 @@ body {
   }
   
   .btn:hover {
-    background-color: #e04e48;
+    background-color: #000;
+  }
+  
+  /* FOOTER */
+  footer {
+    background: #222;
+    color: #ccc;
+    padding: 1rem;
+    margin-top: 2rem;
+    font-size: 0.9rem;
   }
   
