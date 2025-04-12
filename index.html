@@ -23,22 +23,20 @@
 
   <header class="site-header">
     <div class="header-content">
-      <h1>Virendra's Thumbnail Creations</h1>
-      <p>I make eye-catching YouTube thumbnails.</p>
-      <a href="mailto:virendra@example.com" class="btn">Hire Me</a>
+      <h1>------------------</h1>
+      <p>----------------------------------</p>
+      <a href="mailto:virendra@example.com" class="btn">-------</a>
     </div>
+    <!-- <button id="themeToggle" class="theme-toggle-btn">🌙 Toggle Theme</button> -->
+
   </header>
   
-
   <main>
-
-  </main>
     <!-- New Section Title -->
     <section class="work-section">
-      <h2 class="section-title">My Work</h2>
+      <h2 class="section-title">-------</h2>
     </section>
     
-
     <!-- Gallery -->
     <section class="gallery">
       <img src="images/thumb1.jpg" alt="Thumbnail 1">
@@ -46,19 +44,45 @@
       <img src="images/thumb3.jpg" alt="Thumbnail 3">
       <img src="images/thumb4.jpg" alt="Thumbnail 4">
     </section>
+
+    <section class="info-section">
+      <h2>-----------</h2>
+      <ul>
+        <li>🖌️ --------------------</li>
+        <li>🎯 ------------------</li>
+        <li>⚡ -----------</li>
+      </ul>
+    
+      <h2>---------------</h2>
+      <p>------------------------------------------------------</p>
+    </section>
+    
+    <a href="https://discordapp.com/users/yourid" class="contact-float" target="_blank">
+      <i class="fab fa-discord"></i>
+    </a>
   </main>
 
   <footer>
-    <p>Contact: <a href="mailto:virendra@example.com">virendra@example.com</a></p>
+    <p>&copy; 2025 Virendra Xtreme. All rights reserved.</p>
     <div class="social-icons">
-      <a href="https://discordapp.com/users/788743823576662047" target="_blank"><i class="fab fa-discord"></i></a>
-      <a href="https://instagram.com/virendraXD" target="_blank"><i class="fab fa-instagram"></i></a>
-      <a href="https://facebook.com/virendraXD" target="_blank"><i class="fab fa-facebook"></i></a>
-      <!-- Add more as needed -->
+      <a href="#" title="YouTube"><i class="fab fa-youtube"></i></a>
+      <a href="#" title="Instagram"><i class="fab fa-instagram"></i></a>
+      <a href="#" title="Twitter"><i class="fab fa-twitter"></i></a>
     </div>
-  </footer>
+  </footer> 
   
+  <!-- Theme Toggle Button -->
+  <button class="theme-toggle-btn" onclick="toggleTheme()">Toggle Mode</button>
+
+  <script>
+    // Function to toggle between dark and light modes
+    function toggleTheme() {
+      const body = document.body;
+
+      // Toggle between dark-mode and light-mode classes
+      body.classList.toggle('dark-mode');
+      body.classList.toggle('light-mode');
+    }
+  </script>
 </body>
-
-
 </html>

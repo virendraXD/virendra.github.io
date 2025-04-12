@@ -1,0 +1,62 @@
+<header>
+  <h1>Welcome to Virendra Xtreme</h1>
+  <p>Elevating your gaming experience with cutting-edge content</p>
+  <a href="#cta" class="btn">Get Started</a>
+</header>
+
+________________________blue header___________________
+
+header {
+  background: linear-gradient(135deg, #00b4d8, #7209b7); /* Teal to Purple */
+  color: #fff;
+  padding: 3rem 1.5rem;
+  text-align: center;
+  border-bottom: 5px solid #fff;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 3.5rem;
+  font-weight: 700;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #fff;
+}
+
+header p {
+  margin-top: 1rem;
+  font-size: 1.25rem;
+  opacity: 0.85;
+}
+
+header .btn {
+  display: inline-block;
+  margin-top: 2rem;
+  padding: 0.75rem 2rem;
+  background-color: #ffffff;
+  color: #7209b7;
+  border-radius: 50px;
+  font-weight: bold;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  font-size: 1.1rem;
+}
+
+header .btn:hover {
+  background-color: #560bad;
+  color: #fff;
+  transform: translateY(-3px);
+}
+
+
+    <section class="info-section">
+      <h2>What I Offer</h2>
+      <ul>
+        <li>🖌️ Custom YouTube Thumbnails</li>
+        <li>🎯 CTR-Boosting Designs</li>
+        <li>⚡ Fast Delivery</li>
+      </ul>
+    
+      <h2>What People Say</h2>
+      <p>"Virendra's thumbnails helped boost our views by 40%!"</p>
+    </section>
