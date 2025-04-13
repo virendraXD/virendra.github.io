@@ -39,10 +39,10 @@
     
     <!-- Gallery -->
     <section class="gallery">
-      <img src="images/thumb1.jpg" alt="Thumbnail 1">
-      <img src="images/thumb2.jpg" alt="Thumbnail 2">
-      <img src="images/thumb3.jpg" alt="Thumbnail 3">
-      <img src="images/thumb4.jpg" alt="Thumbnail 4">
+      <img src="images/bg_skeleton.jpg" alt="Thumbnail 1">
+      <img src="images/bg_skeleton.jpg" alt="Thumbnail 2">
+      <img src="images/bg_skeleton.jpg" alt="Thumbnail 3">
+      <img src="images/bg_skeleton.jpg" alt="Thumbnail 4">
     </section>
 
     <section class="info-section">
@@ -63,26 +63,38 @@
   </main>
 
   <footer>
-    <p>&copy; 2025 Virendra Xtreme. All rights reserved.</p>
     <div class="social-icons">
       <a href="#" title="YouTube"><i class="fab fa-youtube"></i></a>
       <a href="#" title="Instagram"><i class="fab fa-instagram"></i></a>
       <a href="#" title="Twitter"><i class="fab fa-twitter"></i></a>
     </div>
+    <p>&copy; 2025 Virendra Xtreme. All rights reserved.</p>
   </footer> 
   
   <!-- Theme Toggle Button -->
-  <button class="theme-toggle-btn" onclick="toggleTheme()">Toggle Mode</button>
+  <button class="theme-toggle-btn" id="themeToggle">
+    <i class="fas fa-moon"></i> <!-- default: moon icon -->
+  </button>
 
-  <script>
-    // Function to toggle between dark and light modes
-    function toggleTheme() {
-      const body = document.body;
+<script>
+  const toggleBtn = document.getElementById('themeToggle');
+  const body = document.body;
 
-      // Toggle between dark-mode and light-mode classes
-      body.classList.toggle('dark-mode');
-      body.classList.toggle('light-mode');
+  toggleBtn.addEventListener('click', () => {
+    body.classList.toggle('light-mode');
+    body.classList.toggle('dark-mode');
+
+    // Switch icon
+    const icon = toggleBtn.querySelector('i');
+    if (body.classList.contains('light-mode')) {
+      icon.classList.remove('fa-moon');
+      icon.classList.add('fa-sun');
+    } else {
+      icon.classList.remove('fa-sun');
+      icon.classList.add('fa-moon');
     }
-  </script>
+  });
+</script>
+
 </body>
 </html>
